@@ -1,3 +1,4 @@
+libdata/ldconfig/xtensa-lx106-elf
 xtensa-lx106-elf/bin/xtensa-lx106-elf-addr2line
 xtensa-lx106-elf/bin/xtensa-lx106-elf-ar
 xtensa-lx106-elf/bin/xtensa-lx106-elf-as
@@ -1496,6 +1497,7 @@ xtensa-lx106-elf/xtensa-lx106-elf/include/machine/types.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/malloc.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/math.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/memory.h
+xtensa-lx106-elf/xtensa-lx106-elf/include/ndbm.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/newlib.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/paths.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/pthread.h
@@ -1524,6 +1526,7 @@ xtensa-lx106-elf/xtensa-lx106-elf/include/string.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/strings.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/_default_fcntl.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/_intsup.h
+xtensa-lx106-elf/xtensa-lx106-elf/include/sys/_locale.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/_pthreadtypes.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/_sigset.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/_stdint.h
@@ -1538,6 +1541,7 @@ xtensa-lx106-elf/xtensa-lx106-elf/include/sys/dirent.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/errno.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/fcntl.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/features.h
+xtensa-lx106-elf/xtensa-lx106-elf/include/sys/fenv.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/file.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/iconvnls.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/sys/lock.h
@@ -1573,7 +1577,6 @@ xtensa-lx106-elf/xtensa-lx106-elf/include/utmp.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/wchar.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/wctype.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/wordexp.h
-xtensa-lx106-elf/xtensa-lx106-elf/include/xlocale.h
 xtensa-lx106-elf/xtensa-lx106-elf/include/xtensa/config/core-isa.h
 xtensa-lx106-elf/xtensa-lx106-elf/lib/crt0.o
 xtensa-lx106-elf/xtensa-lx106-elf/lib/default.specs
@@ -1681,6 +1684,7 @@ xtensa-lx106-elf/xtensa-lx106-elf/sys-include/machine/types.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/malloc.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/math.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/memory.h
+xtensa-lx106-elf/xtensa-lx106-elf/sys-include/ndbm.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/newlib.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/paths.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/pthread.h
@@ -1709,6 +1713,7 @@ xtensa-lx106-elf/xtensa-lx106-elf/sys-include/string.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/strings.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/_default_fcntl.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/_intsup.h
+xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/_locale.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/_pthreadtypes.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/_sigset.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/_stdint.h
@@ -1723,6 +1728,7 @@ xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/dirent.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/errno.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/fcntl.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/features.h
+xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/fenv.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/file.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/iconvnls.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/lock.h
@@ -1758,7 +1764,6 @@ xtensa-lx106-elf/xtensa-lx106-elf/sys-include/utmp.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/wchar.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/wctype.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/wordexp.h
-xtensa-lx106-elf/xtensa-lx106-elf/sys-include/xlocale.h
 xtensa-lx106-elf/xtensa-lx106-elf/sys-include/xtensa/config/core-isa.h
 @dir xtensa-lx106-elf/xtensa-lx106-elf/include/bits
 @dir xtensa-lx106-elf/xtensa-lx106-elf/include/rpc
