@@ -1,4 +1,3 @@
-libdata/ldconfig/xtensa-lx106-elf
 xtensa-lx106-elf/bin/xtensa-lx106-elf-addr2line
 xtensa-lx106-elf/bin/xtensa-lx106-elf-ar
 xtensa-lx106-elf/bin/xtensa-lx106-elf-as
