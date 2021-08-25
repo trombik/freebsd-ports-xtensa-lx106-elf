@@ -58,7 +58,7 @@ BUILD_DEPENDS=	bash:shells/bash \
 		wget:ftp/wget
 
 USES=		autoreconf:build bison gmake libtool python:3.5+ iconv gettext-runtime
-USE_GCC=	7+
+USE_GCC=	8+
 USE_GITHUB=	yes
 USE_LDCONFIG=	${PREFIX}/${PORTNAME}/libexec/gcc/${PORTNAME}/8.2.0
 
