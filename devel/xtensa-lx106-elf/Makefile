@@ -28,16 +28,16 @@ DISTFILES=	\
 		automake-1.16.1.tar.gz:source8
 # crosstool-NG supports custom location to archive files, but it also assumes
 # that top directoy of an archive is same as its file name without suffix. due
-# to this, archives from github repositories must be extracted.
+# to this, arvhives from espressif github repositories must be extracted.
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} \
 	espressif-gcc-${ESPRESSIF_VERSION}_GH0.tar.gz \
 	espressif-binutils-gdb-${ESPRESSIF_VERSION}-binutils_GH0.tar.gz \
-	espressif-binutils-gdb-${ESPRESSIF_VERSION}-gdb81_GH0.tar.gz \
+	espressif-binutils-gdb-${ESPRESSIF_VERSION}-gdb_GH0.tar.gz \
 	espressif-xtensa-overlays-${XTENSA_OVERLAYS_TAGNAME}_GH0.tar.gz \
 	espressif-newlib-esp32-${ESPRESSIF_VERSION}_GH0.tar.gz
 
 MAINTAINER=	leres@FreeBSD.org
-COMMENT=	Espressif ESP8266 toolchain
+COMMENT=	Espressif ESP32 toolchain
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
@@ -63,14 +63,14 @@ USE_GITHUB=	yes
 USE_LDCONFIG=	${PREFIX}/${PORTNAME}/libexec/gcc/${PORTNAME}/8.2.0
 
 # XXX the upstream versioning does not match one of the ports
-ESPRESSIF_VERSION=	esp-2021r1
+ESPRESSIF_VERSION=	esp-2020r3
 
 # see https://github.com/espressif/crosstool-NG/commits/esp-1.23.x
-TAGNAME=	c65c037
-XTENSA_OVERLAYS_TAGNAME=	a5ab689
+TAGNAME=	a44a340
+XTENSA_OVERLAYS_TAGNAME=	4d8c98dc
 
 GH_TUPLE=	espressif:gcc:${ESPRESSIF_VERSION}:source100 \
-	espressif:binutils-gdb:${ESPRESSIF_VERSION}-gdb81:source101 \
+	espressif:binutils-gdb:${ESPRESSIF_VERSION}-gdb:source101 \
 	espressif:binutils-gdb:${ESPRESSIF_VERSION}-binutils:source102 \
 	espressif:newlib-esp32:${ESPRESSIF_VERSION}:source103 \
 	espressif:xtensa-overlays:${XTENSA_OVERLAYS_TAGNAME}:source104 \
