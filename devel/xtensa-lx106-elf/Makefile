@@ -28,7 +28,7 @@ DISTFILES=	\
 		automake-1.16.1.tar.gz:source8
 # crosstool-NG supports custom location to archive files, but it also assumes
 # that top directoy of an archive is same as its file name without suffix. due
-# to this, arvhives from espressif github repositories must be extracted.
+# to this, archives from github repositories must be extracted.
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} \
 	espressif-gcc-${ESPRESSIF_VERSION}_GH0.tar.gz \
 	espressif-binutils-gdb-${ESPRESSIF_VERSION}-binutils_GH0.tar.gz \
@@ -37,7 +37,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} \
 	espressif-newlib-esp32-${ESPRESSIF_VERSION}_GH0.tar.gz
 
 MAINTAINER=	leres@FreeBSD.org
-COMMENT=	Espressif ESP32 toolchain
+COMMENT=	Espressif ESP8266 toolchain
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
