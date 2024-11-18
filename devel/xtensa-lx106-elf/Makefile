@@ -4,6 +4,7 @@
 PORTNAME=	xtensa-lx106-elf
 PORTVERSION=	${ESPRESSIF_VERSION:S/esp-//:S/r/.r/}
 CATEGORIES=	devel
+PORTREVISION=	1
 MASTER_SITES= \
 		https://github.com/libexpat/libexpat/releases/download/R_2_2_5/:source1 \
 		SF/expat/:source1 \
@@ -54,13 +55,13 @@ BUILD_DEPENDS=	bash:shells/bash \
 		gperf:devel/gperf \
 		gsed:textproc/gsed \
 		help2man:misc/help2man \
-		makeinfo:print/texinfo \
-		wget:ftp/wget
+		makeinfo:print/texinfo
 
 USES=		autoreconf:build bison gmake libtool python:3.5+ iconv gettext-runtime
-USE_GCC=	8+
+USE_GCC=	yes
 USE_GITHUB=	yes
-USE_LDCONFIG=	${PREFIX}/${PORTNAME}/libexec/gcc/${PORTNAME}/8.2.0
+# XXX bump gcc version here when gcc is updated in the upstream
+USE_LDCONFIG=	${PREFIX}/${PORTNAME}/libexec/gcc/${PORTNAME}/8.4.0
 
 # XXX the upstream versioning does not match one of the ports
 ESPRESSIF_VERSION=	esp-2020r3
